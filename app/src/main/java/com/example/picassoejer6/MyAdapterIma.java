@@ -54,11 +54,12 @@ public class MyAdapterIma extends RecyclerView.Adapter<MyAdapterIma.ViewHolder> 
         }
 
         public void getInfo(Fruit fruit) {
-           /* Picasso.get()
+           Picasso.get()
                     .load(fruit.getUrl())
+                   .resize(250, 190)
                     .centerCrop()
                     .into(itemBinding.imageFruit);
-             itemBinding.dataTxt.setText(fruit.getName());*/
+             itemBinding.dataTxt.setText(fruit.getName());
             Log.e(TAG, "hola2");
         }
 

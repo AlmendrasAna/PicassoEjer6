@@ -61,7 +61,7 @@ public class RecycleFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        Log.e(TAG, "holaddd");
+
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
@@ -71,8 +71,7 @@ public class RecycleFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        Log.e(TAG, "holasss");
-        // Inflate the layout for this fragment
+
         binding = FragmentRecycleBinding.inflate(getActivity().getLayoutInflater());
 
         MyAdapterIma adapter = new MyAdapterIma();
@@ -82,24 +81,24 @@ public class RecycleFragment extends Fragment {
         binding.recyclerView.setLayoutManager(new LinearLayoutManager(getActivity().getBaseContext()));
         binding.recyclerView.addItemDecoration(new DividerItemDecoration(binding.recyclerView.getContext(), DividerItemDecoration.VERTICAL));
 
-        Log.e(TAG, "hola");
+
         return binding.getRoot();
     }
 
     private List<Fruit> getData() {
 
-        fruitList.add(new Fruit("Sandia", "https://drive.google.com/file/d/1oDW_6VvIU3iAMkqYHYgp7moXcXTKnza4/view?usp=drive_link", "S A N D I A"));
-        fruitList.add(new Fruit("Manzana", "https://drive.google.com/file/d/13PV4kexH7g1zGQQIoYYaciRLdZGrM8KT/view?usp=drive_link", "M A N Z A N A"));
-        fruitList.add(new Fruit("Melon", "https://drive.google.com/file/d/12fIDNpo-64Z_2Estsh8GJk17crt_Z9Q1/view?usp=drive_link", "M E L O N"));
-        fruitList.add(new Fruit("Banana", "https://drive.google.com/file/d/14YQ29EE6d6XIzRWkBYf6N23Q6CyQGOrA/view?usp=drive_link", "B A N A N A"));
-        fruitList.add(new Fruit("Pera", "https://drive.google.com/file/d/1Fey16NdzcWns23WCGmbilx5JJzp9ZD2P/view?usp=drive_link", "P E R A"));
-        fruitList.add(new Fruit("Naranja", "https://drive.google.com/file/d/1JIXlVbWJUFrFC-cbpF_lsXGA_4M2sRRN/view?usp=drive_link", "N A R A N J A"));
-        fruitList.add(new Fruit("Mora", "https://drive.google.com/file/d/1S5A3m-RIH7y_cr9TrIzPM4Qt7ubwvaNN/view?usp=drive_link", "M O R A"));
-        fruitList.add(new Fruit("Arandanos", "https://drive.google.com/file/d/1V4ds9d1szzfua8BOqC-jcM3H7mZdMfBB/view?usp=drive_link", "A R A N D A N O S"));
-        fruitList.add(new Fruit("Melocoton", "https://drive.google.com/file/d/1i4AgSnO2L1ypGz1vr1OiAr_LTu-K2nrY/view?usp=drive_link", "M E L O C O T O N"));
-        fruitList.add(new Fruit("Damasco", "https://drive.google.com/file/d/1py4wB_d4gVYdX_SkbSyyZTRWR0bsuNMM/view?usp=drive_link", "D A M A S C O"));
-        fruitList.add(new Fruit("Maracuya", "https://drive.google.com/file/d/13j45wAngdSe6rzCi-czxMXIyhPznMd7F/view?usp=drive_link", "M A R A C U Y A"));
-        fruitList.add(new Fruit("Pomelo", "https://drive.google.com/file/d/1xls_u_4sp6fZHNkS2ajxxwKZ-TjBn5Vj/view?usp=drive_link", "P O M E L O"));
+        fruitList.add(new Fruit("Sandia", "https://5aldia.cl/wp-content/uploads/2018/03/sandia.jpg", "S A N D I A"));
+        fruitList.add(new Fruit("Manzana", "https://www.semana.com/resizer/aFlCrqRB5tcLkt-aB8oGfRK9VZQ=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/UM4AUXGP25H6NM6CS7UENR32DQ.jpg", "M A N Z A N A"));
+        fruitList.add(new Fruit("Melon", "https://frutonchile.cl/wp-content/uploads/2020/11/MELON-CALAMENO.jpg", "M E L O N"));
+        fruitList.add(new Fruit("Banana", "https://fruittoday.com/wp-content/uploads/2021/11/cuanto-azucar-tiene-platano-1024x774.jpg", "B A N A N A"));
+        fruitList.add(new Fruit("Pera", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrEvApr2rMOjQcJbK_T-uQyJBsVFbZZtXpW5y4wLgHjrK6FLlqYHyM-NnTgYI4uLEVIM&usqp=CAU", "P E R A"));
+        fruitList.add(new Fruit("Naranja", "https://i0.wp.com/historiasdelahistoria.com/wordpress-2.3.1-ES-0.1-FULL/wp-content/uploads/2015/11/naranja.jpg?w=607&ssl=1", "N A R A N J A"));
+        fruitList.add(new Fruit("Mora", "https://cdn.ppfam.com/files/445-27896-imagen/mora.jpg", "M O R A"));
+        fruitList.add(new Fruit("Arandanos", "https://sanangel.edu.mx/sites/default/files/gdi/Mora-Azul-Banner.jpg", "A R A N D A N O S"));
+        fruitList.add(new Fruit("Melocoton", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSr_ctdogvZkBvILA1iYPQTplN8BCCbUUesgFuPqODj6pQqCQjN-gJpd9Ca9hpaHnH4o&usqp=CAU", "M E L O C O T O N"));
+        fruitList.add(new Fruit("Damasco", "https://5aldia.cl/wp-content/uploads/2018/03/damasco.jpg", "D A M A S C O"));
+        fruitList.add(new Fruit("Maracuya", "https://i0.wp.com/procamp.cl/wp-content/uploads/2020/07/marcuya.png?fit=600%2C600&ssl=1", "M A R A C U Y A"));
+        fruitList.add(new Fruit("Pomelo", "https://cugat.cl/multi/chillan/wp-content/uploads/sites/9/2022/07/2542025000002-2.jpg", "P O M E L O"));
         return fruitList;
     }
 }
