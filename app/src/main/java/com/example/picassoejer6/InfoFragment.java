@@ -1,12 +1,19 @@
 package com.example.picassoejer6;
 
+import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
+
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
 
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.example.picassoejer6.databinding.FragmentInfoBinding;
+import com.example.picassoejer6.databinding.FragmentRecycleBinding;
+import com.squareup.picasso.Picasso;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -23,6 +30,8 @@ public class InfoFragment extends Fragment {
     // TODO: Rename and change types of parameters
     private String mParam1;
     private String mParam2;
+
+    private String mParam3;
 
     public InfoFragment() {
         // Required empty public constructor
@@ -50,15 +59,23 @@ public class InfoFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            mParam1 = getArguments().getString("name");
+
+            mParam2 = getArguments().getString("url");
+            mParam3 = getArguments().getString("info");
         }
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_info, container, false);
+        Log.e(TAG, "onCreateView: "+mParam1);
+        FragmentInfoBinding binding = FragmentInfoBinding.inflate(getLayoutInflater());
+        binding.titleTxt.setText(mParam1);
+        Picasso.get()
+                .load(mParam2)
+                .into(binding.imageFruit);
+binding.infoTxt.setText(mParam3);
+        return binding.getRoot();
     }
 }

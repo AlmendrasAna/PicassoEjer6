@@ -2,12 +2,14 @@ package com.example.picassoejer6;
 
 import static androidx.constraintlayout.helper.widget.MotionEffect.TAG;
 
+import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.picassoejer6.databinding.ItemBinding;
@@ -66,6 +68,18 @@ public class MyAdapterIma extends RecyclerView.Adapter<MyAdapterIma.ViewHolder> 
         @Override
         public void onClick(View v) {
 
+            int position = getLayoutPosition();
+
+            Log.e(TAG, "onClick: ");
+
+            Fruit itemFruit = fruitList.get(position);
+
+            Bundle bundle = new Bundle();
+            bundle.putString("name", itemFruit.getName());
+            bundle.putString("url", itemFruit.getUrl());
+            bundle.putString("info", itemFruit.getInfo());
+
+            Navigation.findNavController(itemBinding.getRoot()).navigate(R.id.action_recycleFragment_to_infoFragment, bundle);
         }
     }
 }

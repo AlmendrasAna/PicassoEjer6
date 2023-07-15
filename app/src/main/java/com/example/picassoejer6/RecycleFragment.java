@@ -87,18 +87,18 @@ public class RecycleFragment extends Fragment {
 
     private List<Fruit> getData() {
 
-        fruitList.add(new Fruit("Sandia", "https://5aldia.cl/wp-content/uploads/2018/03/sandia.jpg", "S A N D I A"));
-        fruitList.add(new Fruit("Manzana", "https://www.semana.com/resizer/aFlCrqRB5tcLkt-aB8oGfRK9VZQ=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/UM4AUXGP25H6NM6CS7UENR32DQ.jpg", "M A N Z A N A"));
-        fruitList.add(new Fruit("Melon", "https://frutonchile.cl/wp-content/uploads/2020/11/MELON-CALAMENO.jpg", "M E L O N"));
-        fruitList.add(new Fruit("Banana", "https://fruittoday.com/wp-content/uploads/2021/11/cuanto-azucar-tiene-platano-1024x774.jpg", "B A N A N A"));
-        fruitList.add(new Fruit("Pera", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrEvApr2rMOjQcJbK_T-uQyJBsVFbZZtXpW5y4wLgHjrK6FLlqYHyM-NnTgYI4uLEVIM&usqp=CAU", "P E R A"));
-        fruitList.add(new Fruit("Naranja", "https://i0.wp.com/historiasdelahistoria.com/wordpress-2.3.1-ES-0.1-FULL/wp-content/uploads/2015/11/naranja.jpg?w=607&ssl=1", "N A R A N J A"));
-        fruitList.add(new Fruit("Mora", "https://cdn.ppfam.com/files/445-27896-imagen/mora.jpg", "M O R A"));
-        fruitList.add(new Fruit("Arandanos", "https://sanangel.edu.mx/sites/default/files/gdi/Mora-Azul-Banner.jpg", "A R A N D A N O S"));
-        fruitList.add(new Fruit("Melocoton", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSr_ctdogvZkBvILA1iYPQTplN8BCCbUUesgFuPqODj6pQqCQjN-gJpd9Ca9hpaHnH4o&usqp=CAU", "M E L O C O T O N"));
-        fruitList.add(new Fruit("Damasco", "https://5aldia.cl/wp-content/uploads/2018/03/damasco.jpg", "D A M A S C O"));
-        fruitList.add(new Fruit("Maracuya", "https://i0.wp.com/procamp.cl/wp-content/uploads/2020/07/marcuya.png?fit=600%2C600&ssl=1", "M A R A C U Y A"));
-        fruitList.add(new Fruit("Pomelo", "https://cugat.cl/multi/chillan/wp-content/uploads/sites/9/2022/07/2542025000002-2.jpg", "P O M E L O"));
+        fruitList.add(new Fruit("Sandia", "https://5aldia.cl/wp-content/uploads/2018/03/sandia.jpg", "S-A-N-D-I-A"));
+        fruitList.add(new Fruit("Manzana", "https://www.semana.com/resizer/aFlCrqRB5tcLkt-aB8oGfRK9VZQ=/1280x720/smart/filters:format(jpg):quality(80)/cloudfront-us-east-1.images.arcpublishing.com/semana/UM4AUXGP25H6NM6CS7UENR32DQ.jpg", "M-A-N-Z-A-N-A"));
+        fruitList.add(new Fruit("Melon", "https://frutonchile.cl/wp-content/uploads/2020/11/MELON-CALAMENO.jpg", "M-E-L-O-N"));
+        fruitList.add(new Fruit("Banana", "https://fruittoday.com/wp-content/uploads/2021/11/cuanto-azucar-tiene-platano-1024x774.jpg", "B-A-N-A-N-A"));
+        fruitList.add(new Fruit("Pera", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkrEvApr2rMOjQcJbK_T-uQyJBsVFbZZtXpW5y4wLgHjrK6FLlqYHyM-NnTgYI4uLEVIM&usqp=CAU", "P-E-R-A"));
+        fruitList.add(new Fruit("Naranja", "https://i0.wp.com/historiasdelahistoria.com/wordpress-2.3.1-ES-0.1-FULL/wp-content/uploads/2015/11/naranja.jpg?w=607&ssl=1", "N-A-R-A-N-J-A"));
+        fruitList.add(new Fruit("Mora", "https://cdn.ppfam.com/files/445-27896-imagen/mora.jpg", "M-O-R-A"));
+        fruitList.add(new Fruit("Arandanos", "https://sanangel.edu.mx/sites/default/files/gdi/Mora-Azul-Banner.jpg", "A-R-A-N-D-A-N-O-S"));
+        fruitList.add(new Fruit("Melocoton", "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTSr_ctdogvZkBvILA1iYPQTplN8BCCbUUesgFuPqODj6pQqCQjN-gJpd9Ca9hpaHnH4o&usqp=CAU", "M-E-L-O-C-O-T-O-N"));
+        fruitList.add(new Fruit("Damasco", "https://5aldia.cl/wp-content/uploads/2018/03/damasco.jpg", "D-A-M-A-S-C-O"));
+        fruitList.add(new Fruit("Maracuya", "https://i0.wp.com/procamp.cl/wp-content/uploads/2020/07/marcuya.png?fit=600%2C600&ssl=1", "M-A-R-A-C-U-Y-A"));
+        fruitList.add(new Fruit("Pomelo", "https://cugat.cl/multi/chillan/wp-content/uploads/sites/9/2022/07/2542025000002-2.jpg", "P-O-M-E-L-O"));
         return fruitList;
     }
 }
